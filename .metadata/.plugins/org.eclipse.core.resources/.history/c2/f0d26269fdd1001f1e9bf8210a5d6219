@@ -1,0 +1,15 @@
+package fundamentos;
+
+public class TiposPrimitivos {
+	byte anosDaEmpresa = 23;
+	short numerosDeVoos = 542;
+	int id = 566564;
+	long pontosAcumulados = 5748789687897L;
+	
+	float salaio = 11_445.44F;
+	double vendasAcumuladas = 2_991_979_103.01;
+	
+	boolean estaDeFerias = false;
+	
+	char status = "A";
+}

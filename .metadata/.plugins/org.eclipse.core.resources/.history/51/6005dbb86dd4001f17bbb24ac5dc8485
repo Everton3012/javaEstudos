@@ -1,0 +1,29 @@
+package ProjetoPessoal;
+
+import java.util.Scanner;
+
+public class DoisTrabalhos {
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.print("O primeiro trabalho foi confirmado ? ");
+		String primeiroTrabalho = entrada.nextLine();
+		
+		System.out.print("O segundo trabalho foi confirmado ? ");
+		String segundoTrabalho = entrada.nextLine();
+		
+		
+		
+		
+		if(primeiroTrabalho.equals("s") && segundoTrabalho.equals("s")) {
+			System.out.println("Compraremos a televisão de 50 polegadas e comeremos sorvete");
+		} else if (primeiroTrabalho == "n" && segundoTrabalho == "n") {
+			System.out.println("Ficaremos em casa");
+		} else {
+			System.out.println("Compraremos a televisão de 32 polegadas e comeremos sorvete");
+		}
+		
+		entrada.close();
+	}
+}
+

@@ -1,0 +1,8 @@
+package fundamentos;
+
+public class DesafioAritimeticos {
+	public static void main(String[] args) {
+		int a = 2 + 3 * 4;
+		double b = Math.pow(a, 3);
+	}
+}

@@ -1,0 +1,30 @@
+package ProjetoPessoal;
+
+import java.util.Scanner;
+
+public class DesafioCalculadora {
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		System.out.print("Informe um numero:");
+		Double valor1 = entrada.nextDouble();
+		
+		System.out.print("Informe o segundo numero:");
+		Double valor2 = entrada.nextDouble();
+		
+		System.out.print("Informe o operador:");
+		String operador = entrada.next().replace(",", ".");
+		
+		
+		 
+		
+		double resutado = "+".equals(operador) ? valor1 + valor2 : 0 ;
+		resutado = "-".equals(operador) ? valor1 - valor2 : 0 ;
+		resutado = "*".equals(operador) ? valor1 * valor2 : 0 ;
+		resutado = "/".equals(operador) ? valor1 / valor2 : 0 ;
+		resutado = "%".equals(operador) ? valor1 % valor2 : 0 ;
+		
+		System.out.println(resutado);
+		
+		entrada.close();
+	}
+}

@@ -1,0 +1,25 @@
+package ProjetoPessoal;
+
+import java.util.Scanner;
+
+public class DesafioCalculadora {
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		System.out.print("Informe um numero:");
+		Double valor1 = entrada.nextDouble();
+		
+		System.out.print("Informe o segundo numero:");
+		Double valor2 = entrada.nextDouble();
+		
+		System.out.print("Informe o operador:");
+		String operador = entrada.next().replace(",", ".");
+		
+		double numero1 = (double) Double.parseDouble(valor1); 
+		double numero2 = (double) Double.parseDouble(valor2); 
+		 
+		
+		double resutado = numero1 + operador + numero2;
+		
+		entrada.close();
+	}
+}
