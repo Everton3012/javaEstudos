@@ -1,21 +1,34 @@
 package ProjetoPessoal;
 
+import java.util.Scanner;
+
 public class DesafioDiaSemana {
-    
+
     public static void main(String[] args) {
-        // Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        // System.out.print("Digite um número:");
-        // int number = scanner.nextInt();
-  
-        // scanner.nextLine();
+        System.out.print("Digite o nome do dia: ");
+        String dia = scanner.next();
 
-        // System.out.print("Digite uma linha de texto:");
-        // String text = scanner.nextLine();
-  
-        // System.out.println("Número: " + number);
-        // System.out.println("Texto: " + text);    
-        
-        // scanner.close();
+        if (dia.equalsIgnoreCase("domingo")) {
+            System.out.println(1);
+        } else if (dia.equalsIgnoreCase("segunda")) {
+            System.out.println(2);
+        } else if (dia.equalsIgnoreCase("terca")) {
+            System.out.println(3);
+        } else if (dia.equalsIgnoreCase("quarta")) {
+            System.out.println(4);
+        } else if (dia.equalsIgnoreCase("quinta")) {
+            System.out.println(5);
+        } else if (dia.equalsIgnoreCase("sexta")) {
+            System.out.println(6);
+        } else if (dia.equalsIgnoreCase("sabado")) {
+            System.out.println(7);
+        } else {
+            System.err.println("Dia invalido");
+        }
+
+        scanner.close();
+
     }
 }
