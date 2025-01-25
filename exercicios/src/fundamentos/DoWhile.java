@@ -10,7 +10,7 @@ public class DoWhile {
         do {
             System.out.println("Você precisa falar as palavras mágicas");
             System.out.print("Quer sair? ");
-            texto = scanner.nextLine();
+            texto = scanner.next();
         } while (!texto.equalsIgnoreCase("por favor"));
 
         System.out.println("Obrigado!");
