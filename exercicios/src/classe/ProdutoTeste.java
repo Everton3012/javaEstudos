@@ -8,7 +8,7 @@ public class ProdutoTeste {
         //p1.preco = 4356.89;
         //p1.desconto = .25;
 
-        double valorFinal = p1.precoComDesconto(-0.25);
+        double valorFinal = p1.precoComDesconto(.30);
 
         System.out.println(p1.nome);
         System.out.printf("%.2f", valorFinal);
