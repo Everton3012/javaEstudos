@@ -3,32 +3,33 @@ package oo.heranca;
 public class Jogo {
 
     public static void main(String[] args) {
-        Monstro j1 = new Monstro();
-        Heroi j2 = new Heroi();
+        Monstro monstro = new Monstro();
+        Heroi heroi = new Heroi();
 
-        j1.x = 10;
-        j1.y = 10;
-        j2.x = 10;
-        j2.y = 11;
+        monstro.x = 10;
+        monstro.y = 10;
+        heroi.x = 10;
+        heroi.y = 11;
 
-        j1.atacar(j2);
-        j1.atacar(j2);
+        monstro.atacar(heroi);
+        monstro.atacar(heroi);
 
-        j2.atacar(j1);
-        System.out.println(j2.vida);
-        System.out.println(j1.vida);
+        heroi.atacar(monstro);
+        heroi.atacar(monstro);
+        System.out.println(heroi.vida);
+        System.out.println(monstro.vida);
 
-        j1.andar(Direcao.NORTE);
-        j1.andar(Direcao.NORTE);
-        j1.andar(Direcao.NORTE);
-        j1.andar(Direcao.NORTE);
-        j1.andar(Direcao.SUL);
-        j1.andar(Direcao.SUL);
-        j1.andar(Direcao.LESTE);
-        j1.andar(Direcao.LESTE);
-        j1.andar(Direcao.OESTE);
+        monstro.andar(Direcao.NORTE);
+        monstro.andar(Direcao.NORTE);
+        monstro.andar(Direcao.NORTE);
+        monstro.andar(Direcao.NORTE);
+        monstro.andar(Direcao.SUL);
+        monstro.andar(Direcao.SUL);
+        monstro.andar(Direcao.LESTE);
+        monstro.andar(Direcao.LESTE);
+        monstro.andar(Direcao.OESTE);
 
-        System.out.println(j1.y);
-        System.out.println(j1.x);
+        System.out.println(monstro.y);
+        System.out.println(monstro.x);
     }
 }
