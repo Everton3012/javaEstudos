@@ -7,7 +7,9 @@ public class DataTeste {
         data.dia = 30;
         data.mes = 12;
         data.ano = 2000;
+        Data data2 = new Data();
 
         System.out.println(data.obterDataFormatada());
+        System.out.println(data2.obterDataFormatada());
     }
 }
