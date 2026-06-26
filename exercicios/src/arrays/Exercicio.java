@@ -17,10 +17,37 @@ public class Exercicio {
         double total = 0;
         for (int i = 0; i < notasAlunoA.length; i++) {
             total += notasAlunoA[i];
-
         }
 
-        System.out.println(total / notasAlunoA.length);
+        double media = (double) total / notasAlunoA.length;
+        System.out.println(media);
+
+        if (media >= 7) {
+            System.out.println("Aluno A: Aprovado");
+        } else if (media >= 5) {
+            System.out.println("Aluno A: Recuperação");
+        } else {
+            System.out.println("Aluno A: Reprovado");
+        }
+
+        double[] notasAlunoB = {6.9, 8.9, 5.5, 10};
+        String notasB = Arrays.toString(notasAlunoB);
+        System.out.println(notasB);
+
+        double totalB = 0;
+        for (int i = 0; i < notasAlunoB.length; i++) {
+            totalB += notasAlunoB[i];
+        }
+        double mediaB = (double) totalB / notasAlunoB.length;
+        System.out.println(mediaB);
+
+        if (mediaB >= 7) {
+            System.out.println("Aluno B: Aprovado");
+        } else if (media >= 5) {
+            System.out.println("Aluno B: Recuperação");
+        } else {
+            System.out.println("Aluno B: Reprovado");
+        }
 
     }
 }
