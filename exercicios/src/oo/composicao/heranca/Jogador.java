@@ -7,6 +7,11 @@ public class Jogador {
     int x;
     int y;
 
+    public Jogador(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
     boolean atacar(Jogador oponente) {
 
         int detalX = Math.abs(x - oponente.x);
